@@ -9,6 +9,10 @@ hr{
     margin-top: 5%;
     margin-bottom: 5%;
 }
+.mohitimg img
+{
+    opacity: .5;
+}
 header img
 {
     height:20vh;
