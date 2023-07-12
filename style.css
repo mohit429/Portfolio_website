@@ -218,6 +218,7 @@ body{
     justify-content: center;
     text-align: center;
     color: grey;
+    overflow: hidden;
 }
 .Education1
 {
@@ -250,7 +251,6 @@ body{
 {
    display: flex;
    justify-content: space-between;
-   align-items: center;
    margin-top: 5%;
    margin-left: 10%;
    margin-right: 10%;
