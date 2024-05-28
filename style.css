@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
     color: grey;
@@ -158,9 +161,6 @@ body{
     z-index: 1;
     overflow: hidden;
 }
-
-
-
 .essentials a:hover::before
 {
     width: 100%;
@@ -178,7 +178,6 @@ body{
    background-size: cover;
 
 }
-
 .Home p:hover
 {
     background: black;
@@ -259,15 +258,17 @@ body{
 }
 #skill1
 {
-    max-width: 25vw;
+   width: 30vw;
+   margin-right: 5px
 }
 #skill2
 {
-    max-width: 25vw;
+    width: 30vw;
+    margin-right: 5px
 }
 #skill3
 {
-    max-width: 25vw;
+    width: 30vw;
 }
 .project
 {
@@ -287,11 +288,13 @@ body{
 }
 .project button
 {
+    padding-top: 3px;
+    padding-bottom: 3px;
     border-radius: 20%;
     margin-left:1%;
     background-color: grey;
     color: black;
-    width: 7%;
+    min-width:7%;
     border: 1px solid aqua;
 }
 .footer
@@ -305,7 +308,7 @@ body{
 .footer img{
     height: inherit;
 }
-#projectcontent
+.projectcontent
 {
     
     margin-bottom: 5%;
