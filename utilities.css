@@ -1,54 +1,317 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html{
+    scroll-behavior: smooth;
 }
-hr{
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+body{
+    font-family: 'Poppins', sans-serif;
+    color: grey;
+    background: #000;
 }
-.mohitimg img
+.header
 {
-    opacity: .5;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #000;
 }
-header img
+.logo
 {
-    height:20vh;
-    margin-top: 2vh;
-    opacity: .1;
+    font-size: 2rem;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo :hover
+{
+    color: aqua;
+}
+.navbar a
+{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 1s;
+}
+.navbar a:hover,
+.navbar a :active
+{
+    color: aqua;
+    font-size: 1.4rem;
+
 }
 
-img
+.home-content
 {
-  height: 60vh;
-  opacity: 0.33;
+    max-width: 650px;
 }
-.container img{
-    height: 20vh;
-}
-.Skills img
+.home-content h1
 {
-    height: 15vh;
-    opacity: 1.33;
-    background-color: grey;
-    border-radius: 50%;
-    border: 4px solid aqua;
+ font-weight: 700;
+ font-size: 45px;
+ margin-bottom: 10px;
+ line-height:1.5 ;
+
 }
-.neon
+.home-content h3{
+    font-weight: 700;
+    font-size: 30px;
+    color: aqua;
+}
+.home-content p{
+    font-size: 15px;
+    
+}
+.home-content .btn-box
+{   display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 40px;
+    margin-top: 10%;
+}
+.btn-box a
+{   position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 100%;
+    background: aqua;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    overflow: hidden;
+    z-index: 1;
+    color: hsl(226, 30%, 17%);
+}
+.btn-box a:nth-child(1):hover
 {
-    color: greenyellow;
+    color: aqua;
 }
-.project img{
-    opacity: 5;
+.btn-box a:nth-child(2)
+{
+    background: transparent;
+    color: aqua;
+}
+.btn-box a:nth-child(2):hover
+{
+    color:hsl(226, 30%, 17%) ;
+}
+.btn-box a:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:aqua ;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index:-1;
+    transition: .5s;
+}
+.btn-box a:hover::before
+{
+   width: 100%;
+}
+
+.essentials
+{
+    margin-top:-4vh;
+    margin-left: 10vw;
+    bottom: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.essentials a{
+    position:relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height:40px;
+    background: transparent;
     border: 2px solid aqua;
-    margin-top: 5%;
-    max-width: 75vw;
-    margin-bottom: 5%;
+    border-radius: 50%;
+    color: aqua;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+.essentials a:hover::before
+{
+    width: 100%;
+}
+.Home
+{
+   display: flex;
+   align-items:center;
+   justify-content: space-between;
+   height: 100%; 
+   padding: 5% 5%;
+   padding-right: 0px;
+   background: url(mern.webp) no-repeat;
+   background-position: center;
+   background-size: cover;
 
 }
-.footer img
+.Home p:hover
 {
-    opacity: 2;
+    background: black;
+}
+.Home1
+{   height: 100%;
+    margin-top: 5% ;
+    margin-bottom: 10%;
+    display: flex;
+   align-items:center;
+   justify-content: space-between;
+
+}
+.Home1 h1{
+    color: greenyellow; 
+    padding: 1%;
+    margin-right: 2%;
+    margin-left: 5vw;
+}
+.Education
+{
+    border-left: 2px solid grey;
+    
+
+}
+.Education .box 
+{
+    
+    border:1px solid aqua;
+    margin-bottom: 5%;
+    margin-right: 7%;
+    margin-left: 5%;
+    width: auto;
+    margin-top: 2%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: grey;
+    overflow: hidden;
+}
+.Education1
+{
+    border-left: 2px solid grey;
+    padding-left: 2%;
+
+}
+.Education1 .box 
+{
+    border:1px solid aqua;
+    margin-right: 10vw;
+    margin-bottom: 5%;
+    width: auto;
+    margin-top: 2%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: grey;
+}
+ .My
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    color: yellowgreen
+}
+.Skills 
+{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 5%;
+   margin-left: 10%;
+   margin-right: 10%;
+   width: 80%;
+   text-align: center;
+}
+#skill1
+{
+   width: 30vw;
+   margin-right: 5px
+}
+#skill2
+{
+    width: 30vw;
+    margin-right: 5px
+}
+#skill3
+{
+    width: 30vw;
+}
+.project
+{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.project h2{
+    text-align: center;
+    color: yellowgreen;
+    margin-bottom: 5%;
+}
+.project h3{
+    color: aqua;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.project button
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 20%;
+    margin-left:1%;
+    background-color: grey;
+    color: black;
+    min-width:7%;
+    border: 1px solid aqua;
+}
+.footer
+{   
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    margin-bottom: 2%;
+    margin-top: 10%;
+}
+.footer img{
+    height: inherit;
+}
+.projectcontent
+{
+    
+    margin-bottom: 5%;
+    border: 2px solid grey;
+    border-left: none;
 }
